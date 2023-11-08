@@ -63,10 +63,21 @@
             </section>
 
             <section id="introSection" style="color: var(--azul);" class="container-fluid mx-0 my-2 p-0 text-center">
-                <h3>SEU PET PRECISA DE COMIDA? OU DE UNS PETISCOS? VOCÊ ESTÁ NO LUGAR CERTO!</h3>
-                <div class="container mx-auto row">
-                    <div class="col-1">
+                <h3 class="my-3">SEU PET PRECISA DE COMIDA? OU DE UNS PETISCOS? VOCÊ ESTÁ NO LUGAR CERTO!</h3>
+                <div class="container mx-auto my-3 row">
+                    <!-- GRID - 12 COLUNAS e é definido pelo row -->
+                    <!-- <element class="col-(numero de 1 a 12)" col é atributo responsável pelas colunas e pela quantidade ocupada-->
+                    <div class="col-3 m-0 p-0">
                         <img class="w-100" src="images/dogsSection/img1.png" alt="">
+                    </div>
+                    <div class="col-3 m-0 p-0">
+                        <img class="w-100" src="images/dogsSection/img2.png" alt="">
+                    </div>
+                    <div class="col-3 m-0 p-0">
+                        <img class="w-100" src="images/dogsSection/img3.png" alt="">
+                    </div>
+                    <div class="col-3 m-0 p-0">
+                        <img class="w-100" src="images/dogsSection/img4.png" alt="">
                     </div>
                 </div>
                 
@@ -74,12 +85,87 @@
                     <p>Na nossa empresa, sabemos que seu pet é mais do que apenas um animal de estimação; ele é parte da sua família. Por isso, estamos comprometidos em fornecer os melhores cuidados do mercado, garantindo que seu amiguinho peludo receba toda a atenção, carinho e proteção de que ele precisa. A responsabilidade é o nosso lema, e cuidar do seu pet como se fosse o nosso próprio é a nossa missão. Com uma equipe dedicada de profissionais apaixonados por animais, instalações de ponta e uma variedade de serviços que atendem a todas as necessidades do seu pet, estamos aqui para garantir que ele tenha uma vida feliz e saudável. Deixe-nos cuidar do seu pet, para que você possa aproveitar cada momento especial com ele, sabendo que está em mãos seguras e amorosas.</p>
                 </div>
             </section>
+
+            <section id="catalogoSection" class="container-fluid text-center mx-0 my-2 p-0">
+                <h3 class="my-3" style="color: var(--laranja);">CATÁLOGO DE PRODUTOS</h3>
+                <div id="produtosGrupo" class="container-fluid my-2 p-0">
+                    <!-- COLEIRA -->
+                    <div class="card" style="width: 23rem;">
+                        <img src="images/products/productImage.png" class="card-img-top" alt="um cachorro usando coleira">
+                        <div class="card-body">
+                          <h3 class="card-title" style="color: var(--laranja);">COLEIRA</h3>
+                          <p class="card-text">A coleira é o acessório essencial para manter o seu companheiro de quatro patas seguro e com estilo. Feita com materiais de alta qualidade, nossa coleira é resistente e confortável para o seu cão. Com diversos designs e cores disponíveis, você pode encontrar a coleira perfeita que combina com a personalidade do seu peludo amigo. Além de proporcionar segurança durante os passeios, a coleira é uma expressão do amor e cuidado que você tem pelo seu cão.</p>
+                          <h4 style="color: var(--verde);">R$100</h4>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#coleiraModal">
+                            VER MAIS
+                          </button>                          
+                        </div>
+                    </div>
+                    <!-- COMIDA -->
+                    <div class="card" style="width: 23rem;">
+                        <img src="images/products/productImage2.png" class="card-img-top" alt="ração para cachorro">
+                        <div class="card-body">
+                          <h3 class="card-title" style="color: var(--laranja);">COMIDA</h3>
+                          <p class="card-text">Ofereça ao seu cão a nutrição de que ele precisa com a nossa seleção de alimentos premium. Nossas opções de comida são formuladas com ingredientes de alta qualidade, proporcionando uma dieta equilibrada e saborosa. Temos uma variedade de rações secas, úmidas e até mesmo opções naturais e orgânicas para atender às necessidades alimentares do seu pet. Cuide da saúde do seu cão com o melhor em nutrição, garantindo que ele se sinta energizado e feliz todos os dias.</p>
+                          <h4 style="color: var(--verde);">R$100</h4>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comidaModal">
+                            VER MAIS
+                          </button>                          
+                        </div>
+                    </div>
+                    <!-- DISCO -->
+                    <div class="card" style="width: 23rem;">
+                        <img src="images/products/productImage3.png" class="card-img-top" alt="disco de brinquedo para cachorro">
+                        <div class="card-body">
+                          <h3 class="card-title" style="color: var(--laranja);">DISCO DE BRINQUEDO</h3>
+                          <p class="card-text">Mantenha seu cão entretido e ativo com nosso disco de brinquedo, projetado para horas de diversão ao ar livre. Feito de materiais seguros e duráveis, o disco é perfeito para jogos de busca e interação com o seu cão. Seu design aerodinâmico permite lançamentos precisos, proporcionando ao seu peludo momentos de alegria e exercício. Leve-o para o parque ou o quintal e desfrute de momentos emocionantes e saudáveis com seu cão, fortalecendo ainda mais a conexão entre vocês.</p>
+                          <h4 style="color: var(--verde);">R$100</h4>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#discoModal">
+                            VER MAIS
+                          </button>                          
+                        </div>
+                    </div>
+                    <!-- CASINHA -->
+                    <div class="card" style="width: 23rem;">
+                        <img src="images/products/productImage4.png" class="card-img-top" alt="casinha para cachorro">
+                        <div class="card-body">
+                          <h3 class="card-title" style="color: var(--laranja);">CASINHA</h3>
+                          <p class="card-text">Nossa casinha para cães é um verdadeiro lar dentro de casa. Feita com materiais duráveis e resistentes às intempéries, ela oferece um refúgio seguro e aconchegante para o seu pet. Com um design espaçoso e confortável, a casinha é o local perfeito para seu cão descansar, se abrigar do sol ou da chuva, e relaxar com todo o conforto que merece. Garanta que seu melhor amigo tenha um lugar aconchegante para chamar de seu com a nossa casinha de qualidade.</p>
+                          <h4 style="color: var(--verde);">R$100</h4>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#casinhaModal">
+                            VER MAIS
+                          </button>                          
+                        </div>
+                    </div>
+
+                </div>
+            </section>
         </main>
 
         <footer class="text-center py-3">
             <h4>Todos os direitos reservados a @Pawshop - 2023</h4>
         </footer>
-    </div>    
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="coleiraModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
