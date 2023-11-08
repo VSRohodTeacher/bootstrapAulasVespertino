@@ -88,7 +88,7 @@
 
             <section id="catalogoSection" class="container-fluid text-center mx-0 my-2 p-0">
                 <h3 class="my-3" style="color: var(--laranja);">CATÁLOGO DE PRODUTOS</h3>
-                <div id="produtosGrupo" class="container-fluid my-2 p-0">
+                <div id="produtosGrupo" class="d-flex justify-content-center gap-2 container-fluid my-2 p-0">
                     <!-- COLEIRA -->
                     <div class="card" style="width: 23rem;">
                         <img src="images/products/productImage.png" class="card-img-top" alt="um cachorro usando coleira">
@@ -147,20 +147,23 @@
         </footer>
     </div>
     
-    <!-- Modal -->
+    <!-- Coleira Modal -->
     <div class="modal fade" id="coleiraModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" style="color: var(--laranja);" id="exampleModalLabel">COLEIRA</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+          <img class="w-100" src="images/products/productImage.png" alt="">
+          <h3 style="color: var(--verde);">R$100</h3>
+          <label for="quantidade">Quantidade do produto:</label>
+          <input type="number" name="" id="quantidade">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-success">Adicionar no carrinho</button>
         </div>
       </div>
     </div>
